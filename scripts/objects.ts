@@ -1,43 +1,157 @@
 // ### Create Location objects ###
 
-let charlesChurch = new Locations(
-  "Charles Church",
-  "Vienna",
-  1010,
-  "Karlsplatz 1",
-  "./images/place_charleschurch.jpg"
+let centralPark = new Locations(
+  "Central Park",
+  "Manhattan, NY",
+  10019,
+  "200 Central Park S",
+  "./images/loc_centralpark.jpg"
 );
 
-let zooVienna = new Locations(
-  "Zoo Vienna",
-  "Vienna",
-  1130,
-  "Maxingstraße 13b",
-  "./images/place_zoovienna.jpg"
+let statueLiberty = new Locations(
+  "Statue of Liberty",
+  "Manhattan, NY",
+  10004,
+  "Liberty Island, New York Harbor",
+  "./images/loc_statueliberty.jpg"
+);
+
+let empireState = new Locations(
+  "Empire State Building",
+  "Manhattan, NY",
+  10118,
+  "350 Fifth Avenue",
+  "./images/loc_empirestate.jpg"
+);
+
+let timesSquare = new Locations(
+  "Times Square",
+  "Manhattan, NY",
+  10036,
+  "Times Square Brm",
+  "./images/loc_timessquare.jpg"
+);
+
+let museumModern = new Locations(
+  "Museum of Modern Art",
+  "Manhattan, NY",
+  10019,
+  "11 W 53rd Street",
+  "./images/loc_museummodern.jpg"
+);
+
+let brooklynBridge = new Locations(
+  "Brooklyn Bridge",
+  "Northwest Brooklyn, NY",
+  11201,
+  "Brooklyn Bridge Road",
+  "./images/loc_brooklynbridge.jpg"
+);
+
+let rockeCenter = new Locations(
+  "Rockefeller Center",
+  "Manhattan, NY",
+  10112,
+  "Rockefeller Plaza",
+  "./images/loc_rockecenter.jpg"
+);
+
+let guggenheim = new Locations(
+  "Guggenheim Museum",
+  "Manhattan, NY",
+  10128,
+  "1071 5th Avenue",
+  "./images/loc_guggenheim.jpg"
 );
 
 // ### Create Restaurant objects ###
 
-let lemonLeaf = new Restaurants(
-  "Lemon Leaf",
-  "Vienna",
-  1050,
-  "Kettenbrückengasse 19",
-  "./images/rest_lemonleaf.png",
-  "+43(1)5812308",
-  "Thai",
-  "www.lemonleaf.at"
+let bigPalace = new Restaurants(
+  "The Big Palace",
+  "Manhattan, NY",
+  10956,
+  "29 3rd Street #203",
+  "./images/rest_.png",
+  "(509) 279-0762",
+  "Indonesian",
+  "www.bigpalace.dot"
 );
 
-let sixta = new Restaurants(
-  "SIXTA",
-  "Vienna",
-  1050,
-  "Schönbrunner Straße 21",
-  "./images/rest_sixta.png",
-  "+43 1 58 528 56",
-  "Viennese",
-  "www.sixta-restaurant.at"
+let shazam = new Restaurants(
+  "Shazam",
+  "New Hartford, NY",
+  13413,
+  "24 Kellog Road",
+  "./images/rest_.png",
+  "(508) 561-9818",
+  "Thai",
+  "www.shazam.dot"
+);
+
+let kingsize = new Restaurants(
+  "King Size",
+  "South Fallsburg, NY",
+  12779,
+  "4845 Transit Road",
+  "./images/rest_.png",
+  "(508) 890-5592",
+  "Spanish",
+  "www.kingsize.dot"
+);
+
+let modesty = new Restaurants(
+  "Modesty",
+  "Binghamton, NY",
+  13901,
+  "25 Robinson Street",
+  "./images/rest_.png",
+  "(607) 203-1281",
+  "Indian",
+  "www.modesty.at"
+);
+
+let arcticDeer = new Restaurants(
+  "The Arctic Deer",
+  "Flushing, NY",
+  15050,
+  "34th Avenue",
+  "./images/rest_.png",
+  "(772) 334-3096",
+  "American",
+  "www.thearcticdeer.at"
+);
+
+let Crown = new Restaurants(
+  "The Crown",
+  "Farmingdale, NY",
+  11735,
+  "61 Executive Blvd",
+  "./images/rest_.png",
+  "(780) 488-1163",
+  "French",
+  "www.thecrown.dot"
+);
+
+let karmaFarmer = new Restaurants(
+  "Karma Farmer",
+  "Woodside, NY",
+  11377,
+  "4856 44th Street",
+  "./images/rest_.png",
+  "(410) 244-6280",
+  "Indian",
+  "www.karmafarmer.dot"
+);
+
+let theOak = new Restaurants(
+  "The Oak",
+  "Port Washington, NY",
+  11050,
+  "464 Main Street",
+  "./images/rest_.png",
+  "(413) 269-4095",
+  "Thai",
+  "www.theoak.dot"
 );
 
 // ### Create Event objects ###
