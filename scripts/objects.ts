@@ -71,7 +71,7 @@ let bigPalace = new Restaurants(
   "Manhattan, NY",
   10956,
   "29 3rd Street #203",
-  "./images/rest_.png",
+  "./images/rest_bigpalace.jpg",
   "(509) 279-0762",
   "Indonesian",
   "www.bigpalace.dot"
@@ -82,7 +82,7 @@ let shazam = new Restaurants(
   "New Hartford, NY",
   13413,
   "24 Kellog Road",
-  "./images/rest_.png",
+  "./images/rest_shazam.jpg",
   "(508) 561-9818",
   "Thai",
   "www.shazam.dot"
@@ -93,7 +93,7 @@ let kingsize = new Restaurants(
   "South Fallsburg, NY",
   12779,
   "4845 Transit Road",
-  "./images/rest_.png",
+  "./images/rest_kingsize.jpg",
   "(508) 890-5592",
   "Spanish",
   "www.kingsize.dot"
@@ -104,9 +104,9 @@ let modesty = new Restaurants(
   "Binghamton, NY",
   13901,
   "25 Robinson Street",
-  "./images/rest_.png",
+  "./images/rest_modesty.jpg",
   "(607) 203-1281",
-  "Indian",
+  "American",
   "www.modesty.at"
 );
 
@@ -115,7 +115,7 @@ let arcticDeer = new Restaurants(
   "Flushing, NY",
   15050,
   "34th Avenue",
-  "./images/rest_.png",
+  "./images/rest_arcticdeer.jpg",
   "(772) 334-3096",
   "American",
   "www.thearcticdeer.at"
@@ -126,7 +126,7 @@ let Crown = new Restaurants(
   "Farmingdale, NY",
   11735,
   "61 Executive Blvd",
-  "./images/rest_.png",
+  "./images/rest_thecrown.jpg",
   "(780) 488-1163",
   "French",
   "www.thecrown.dot"
@@ -137,7 +137,7 @@ let karmaFarmer = new Restaurants(
   "Woodside, NY",
   11377,
   "4856 44th Street",
-  "./images/rest_.png",
+  "./images/rest_karmafarmer.jpg",
   "(410) 244-6280",
   "Indian",
   "www.karmafarmer.dot"
@@ -148,7 +148,7 @@ let theOak = new Restaurants(
   "Port Washington, NY",
   11050,
   "464 Main Street",
-  "./images/rest_.png",
+  "./images/rest_theoak.jpg",
   "(413) 269-4095",
   "Thai",
   "www.theoak.dot"
