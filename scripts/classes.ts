@@ -26,7 +26,7 @@ class Locations {
     this.visited = visited;
     locArray.push(this);
   }
-  displayLoc() {
+  display() {
     content.innerHTML += `<div class='card col-lg-3 col-md-6'>
     
     <img src='${this.image}' class='card-img-top d-none d-md-block' alt=''>
@@ -63,7 +63,7 @@ class Restaurants extends Locations {
     this.web = web;
     restArray.push(this);
   }
-  displayRest() {
+  display() {
     content.innerHTML += `<div class='card col-lg-3 col-md-6'>
     
     <img src='${this.image}' class='card-img-top d-none d-md-block' alt=''>
@@ -101,7 +101,7 @@ class Events extends Locations {
     this.price = price;
     eveArray.push(this);
   }
-  displayEve() {
+  display() {
     content.innerHTML += `<div class='card col-lg-3 col-md-6'>
     
     <img src='${this.image}' class='card-img-top d-none d-md-block' alt=''>

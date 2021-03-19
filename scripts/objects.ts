@@ -1,4 +1,6 @@
-// ### Create Location objects ###
+/////////////////////////////////////
+// ### Create Location objects ### //
+/////////////////////////////////////
 
 let centralPark = new Locations(
   "Central Park",
@@ -72,7 +74,9 @@ let guggenheim = new Locations(
   "Jul 19 2020 08:47:36 PM"
 );
 
-// ### Create Restaurant objects ###
+///////////////////////////////////////
+// ### Create Restaurant objects ### //
+///////////////////////////////////////
 
 let bigPalace = new Restaurants(
   "The Big Palace",
@@ -170,7 +174,9 @@ let anyamanee = new Restaurants(
   "www.anyamanee.dot"
 );
 
-// ### Create Event objects ###
+//////////////////////////////////
+// ### Create Event objects ### //
+//////////////////////////////////
 
 let circus = new Events(
   "The Whimsical Circus",
@@ -267,83 +273,3 @@ let webdev = new Events(
   "10 p.m.",
   "$ 75.00"
 );
-
-// ### Remove double objects from Locations array ###
-
-locArray = locArray.filter((val) => !restArray.includes(val));
-locArray = locArray.filter((val) => !eveArray.includes(val));
-
-// ### Create Header-bar Localisations ###
-
-function firstHeader() {
-  content.innerHTML =
-    "<div class='col-12 bg-dark d-flex justify-content-between'><div>What's going on in New York ...</div><div>locations</div></div>";
-}
-
-firstHeader();
-
-// ### Loop function to create Location cards ###
-
-function displayLocCards() {
-  for (let i = 0; i < locArray.length; i++) {
-    locArray[i].displayLoc();
-  }
-}
-
-displayLocCards();
-
-// ### Create Header-bar Restaurants ###
-
-function secondHeader() {
-  content.innerHTML +=
-    "<div class='col-12 bg-dark d-flex justify-content-between'><div>What's going on in New York ...</div><div>restaurants</div></div>";
-}
-
-secondHeader();
-
-// ### Loop function to create Restaurant cards ###
-
-function displayRestCards() {
-  for (let i = 0; i < restArray.length; i++) {
-    restArray[i].displayRest();
-  }
-}
-
-displayRestCards();
-
-// ### Create Header-bar Events ###
-
-function thirdHeader() {
-  content.innerHTML +=
-    "<div class='col-12 bg-dark d-flex justify-content-between'><div>What's going on in New York ...</div><div>events</div></div>";
-}
-
-thirdHeader();
-
-// ### Loop function to create Event cards ###
-
-function displayEveCards() {
-  for (let i = 0; i < eveArray.length; i++) {
-    eveArray[i].displayEve();
-  }
-}
-
-displayEveCards();
-
-console.log(locArray);
-console.log(restArray);
-console.log(eveArray);
-//////////////// TEST
-
-// console.table(locArray);
-
-// console.table(locArray);
-// for (let val of locArray) {
-//   document.getElementById("content").innerHTML += val.display();
-// }
-
-// const listEvents = locArray.filter((e) => e.index.includes("Events"));
-
-// array1 = array1.filter(val => !array2.includes(val));
-
-console.table(restArray);
