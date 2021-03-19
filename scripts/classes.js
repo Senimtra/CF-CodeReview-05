@@ -15,8 +15,10 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 var content = document.getElementById("content");
-// ### Create Object array ###
+// ### Create Object arrays for classes (Locations, Restaurants, Events) ###
 var locArray = [];
+var restArray = [];
+var eveArray = [];
 // ### Create Parent class Locations with properties (name(object), city, zip, address, image) ###
 var Locations = /** @class */ (function () {
     function Locations(object, city, zipCode, address, image) {
@@ -40,6 +42,7 @@ var Restaurants = /** @class */ (function (_super) {
         _this.phone = phone;
         _this.cuisine = cuisine;
         _this.web = web;
+        restArray.push(_this);
         return _this;
     }
     Restaurants.prototype.display = function () {
@@ -55,6 +58,7 @@ var Events = /** @class */ (function (_super) {
         _this.date = date;
         _this.time = time;
         _this.price = price;
+        eveArray.push(_this);
         return _this;
     }
     Events.prototype.display = function () {

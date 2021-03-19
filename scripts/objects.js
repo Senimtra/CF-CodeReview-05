@@ -14,9 +14,17 @@ function displayLocCards() {
     }
 }
 displayLocCards();
+// ### Remove Restaurant objects from Locations array ###
+locArray = locArray.filter(function (val) { return !restArray.includes(val); });
+locArray = locArray.filter(function (val) { return !eveArray.includes(val); });
+console.log(locArray);
+console.log(restArray);
+console.log(eveArray);
 //////////////// TEST
-console.table(locArray);
+// console.table(locArray);
 // console.table(locArray);
 // for (let val of locArray) {
 //   document.getElementById("content").innerHTML += val.display();
 // }
+// const listEvents = locArray.filter((e) => e.index.includes("Events"));
+// array1 = array1.filter(val => !array2.includes(val));

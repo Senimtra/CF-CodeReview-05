@@ -2,9 +2,11 @@
 
 let content = document.getElementById("content");
 
-// ### Create Object array ###
+// ### Create Object arrays for classes (Locations, Restaurants, Events) ###
 
 let locArray = [];
+let restArray = [];
+let eveArray = [];
 
 // ### Create Parent class Locations with properties (name(object), city, zip, address, image) ###
 
@@ -38,6 +40,7 @@ class Restaurants extends Locations {
     this.phone = phone;
     this.cuisine = cuisine;
     this.web = web;
+    restArray.push(this);
   }
   display() {
     content.innerHTML += `<div class='card' style='width: 18rem;'><img src='${this.image}' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>${this.object}<br>${this.zipCode} ${this.city}<br>${this.address}<br>${this.phone}<br>${this.cuisine} cuisine<br>${this.web}</p></div></div>`;
@@ -55,6 +58,7 @@ class Events extends Locations {
     this.date = date;
     this.time = time;
     this.price = price;
+    eveArray.push(this);
   }
   display() {
     content.innerHTML += `<div class='card' style='width: 18rem;'><img src='${this.image}' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>${this.object}<br>${this.zipCode} ${this.city}<br>${this.address}<br>${this.date}, ${this.time}<br>${this.price}</p></div></div>`;
