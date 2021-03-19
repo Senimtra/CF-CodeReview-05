@@ -25,16 +25,48 @@ var congress = new Events("World Healthcare Meeting", "Manhattan, NY", 10083, "M
 var concert = new Events("The 4 Live Crew", "Albion, NY", 14411, "Gaines Waterport Rd", "./images/eve_concert.jpg", "Wed., 08/30/2021", "7 p.m.", "$ 65.00");
 var nascar = new Events("Nascar NY 300", "Greenwood Lake, NY", 12572, "Grand Oval, 882 Swede Rd", "./images/eve_nascar.jpg", "Sun., 10/22/2021", "4 p.m.", "$ 55.00");
 var webdev = new Events("Webdeveloper World", "Queens Village, NY", 11427, "Leigh Halls, 155th Ave", "./images/eve_webdev.jpg", "Fr., 06/11/2021", "10 p.m.", "$ 75.00");
+// ### Remove double objects from Locations array ###
+locArray = locArray.filter(function (val) { return !restArray.includes(val); });
+locArray = locArray.filter(function (val) { return !eveArray.includes(val); });
+// ### Create Header-bar Localisations ###
+function firstHeader() {
+    content.innerHTML =
+        "<div class='col-12 bg-dark d-flex justify-content-between'><div>What's going on in New York ...</div><div>locations</div></div>";
+}
+firstHeader();
 // ### Loop function to create Location cards ###
-function displayAllLocCards() {
+function displayLocCards() {
     for (var i = 0; i < locArray.length; i++) {
         locArray[i].display();
     }
 }
-displayAllLocCards();
-// ### Remove Restaurant objects from Locations array ###
-locArray = locArray.filter(function (val) { return !restArray.includes(val); });
-locArray = locArray.filter(function (val) { return !eveArray.includes(val); });
+displayLocCards();
+// ### Create Header-bar Restaurants ###
+function secondHeader() {
+    content.innerHTML +=
+        "<div class='col-12 bg-dark d-flex justify-content-between'><div>What's going on in New York ...</div><div>restaurants</div></div>";
+}
+secondHeader();
+// ### Loop function to create Restaurant cards ###
+function displayRestCards() {
+    for (var i = 0; i < restArray.length; i++) {
+        restArray[i].display();
+    }
+}
+displayRestCards();
+// ### Create Header-bar Events ###
+function thirdHeader() {
+    content.innerHTML +=
+        "<div class='col-12 bg-dark d-flex justify-content-between'><div>What's going on in New York ...</div><div>events</div></div>";
+}
+thirdHeader();
+// ### Loop function to create Event cards ###
+function displayEveCards() {
+    for (var i = 0; i < eveArray.length; i++) {
+        eveArray[i].display();
+    }
+}
+displayEveCards();
 console.log(locArray);
 console.log(restArray);
 console.log(eveArray);

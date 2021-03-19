@@ -1,6 +1,6 @@
 // ### Set HTML-anchor ###
 
-let contentAll = document.getElementById("contentAll");
+let content = document.getElementById("content");
 
 // ### Create Object arrays for classes (Locations, Restaurants, Events) ###
 
@@ -25,12 +25,8 @@ class Locations {
     locArray.push(this);
   }
   display() {
-    contentAll.innerHTML += `<div class='card col-sm-3 my-3 mx-auto' style='max-width: 540px'><img src='${this.image}' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>${this.object}<br>${this.zipCode} ${this.city}<br>${this.address}</p></div></div>`;
+    content.innerHTML += `<div class='card col-lg-3 col-md-6'><img src='${this.image}' class='card-img-top d-none d-md-block' alt=''><div class='card-body'><p class='card-text'>${this.object}<br>${this.zipCode} ${this.city}<br>${this.address}</p></div></div>`;
   }
-
-  // display() {
-  //   contentAll.innerHTML += `<div class='card col-3' style='width: 18rem;'><img src='${this.image}' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>${this.object}<br>${this.zipCode} ${this.city}<br>${this.address}</p></div></div>`;
-  // }
 }
 
 // ### Create Child class Restaurants with properties (phone-number, cuisine, web-address) ###
@@ -47,7 +43,7 @@ class Restaurants extends Locations {
     restArray.push(this);
   }
   display() {
-    contentAll.innerHTML += `<div class='card col-sm-3 my-3 mx-auto' style='max-width: 540px'><img src='${this.image}' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>${this.object}<br>${this.zipCode} ${this.city}<br>${this.address}<br>${this.phone}<br>${this.cuisine} cuisine<br>${this.web}</p></div></div>`;
+    content.innerHTML += `<div class='card col-lg-3 col-md-6'><img src='${this.image}' class='card-img-top d-none d-md-block' alt=''><div class='card-body'><p class='card-text'>${this.object}<br>${this.zipCode} ${this.city}<br>${this.address}<br>${this.phone}<br>${this.cuisine} cuisine<br>${this.web}</p></div></div>`;
   }
 }
 
@@ -65,6 +61,6 @@ class Events extends Locations {
     eveArray.push(this);
   }
   display() {
-    contentAll.innerHTML += `<div class='card col-sm-3 my-3 mx-auto' style='max-width: 540px'><img src='${this.image}' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>${this.object}<br>${this.zipCode} ${this.city}<br>${this.address}<br>${this.date}, ${this.time}<br>${this.price}</p></div></div>`;
+    content.innerHTML += `<div class='card col-lg-3 col-md-6'><img src='${this.image}' class='card-img-top d-none d-md-block' alt=''><div class='card-body'><p class='card-text'>${this.object}<br>${this.zipCode} ${this.city}<br>${this.address}<br>${this.date}, ${this.time}<br>${this.price}</p></div></div>`;
   }
 }

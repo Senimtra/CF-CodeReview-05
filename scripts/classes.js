@@ -14,7 +14,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var contentAll = document.getElementById("contentAll");
+var content = document.getElementById("content");
 // ### Create Object arrays for classes (Locations, Restaurants, Events) ###
 var locArray = [];
 var restArray = [];
@@ -30,7 +30,7 @@ var Locations = /** @class */ (function () {
         locArray.push(this);
     }
     Locations.prototype.display = function () {
-        contentAll.innerHTML += "<div class='card col-sm-3 my-3 mx-auto' style='max-width: 540px'><img src='" + this.image + "' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>" + this.object + "<br>" + this.zipCode + " " + this.city + "<br>" + this.address + "</p></div></div>";
+        content.innerHTML += "<div class='card col-lg-3 col-md-6'><img src='" + this.image + "' class='card-img-top d-none d-md-block' alt=''><div class='card-body'><p class='card-text'>" + this.object + "<br>" + this.zipCode + " " + this.city + "<br>" + this.address + "</p></div></div>";
     };
     return Locations;
 }());
@@ -46,7 +46,7 @@ var Restaurants = /** @class */ (function (_super) {
         return _this;
     }
     Restaurants.prototype.display = function () {
-        contentAll.innerHTML += "<div class='card col-sm-3 my-3 mx-auto' style='max-width: 540px'><img src='" + this.image + "' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>" + this.object + "<br>" + this.zipCode + " " + this.city + "<br>" + this.address + "<br>" + this.phone + "<br>" + this.cuisine + " cuisine<br>" + this.web + "</p></div></div>";
+        content.innerHTML += "<div class='card col-lg-3 col-md-6'><img src='" + this.image + "' class='card-img-top d-none d-md-block' alt=''><div class='card-body'><p class='card-text'>" + this.object + "<br>" + this.zipCode + " " + this.city + "<br>" + this.address + "<br>" + this.phone + "<br>" + this.cuisine + " cuisine<br>" + this.web + "</p></div></div>";
     };
     return Restaurants;
 }(Locations));
@@ -62,7 +62,7 @@ var Events = /** @class */ (function (_super) {
         return _this;
     }
     Events.prototype.display = function () {
-        contentAll.innerHTML += "<div class='card col-sm-3 my-3 mx-auto' style='max-width: 540px'><img src='" + this.image + "' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>" + this.object + "<br>" + this.zipCode + " " + this.city + "<br>" + this.address + "<br>" + this.date + ", " + this.time + "<br>" + this.price + "</p></div></div>";
+        content.innerHTML += "<div class='card col-lg-3 col-md-6'><img src='" + this.image + "' class='card-img-top d-none d-md-block' alt=''><div class='card-body'><p class='card-text'>" + this.object + "<br>" + this.zipCode + " " + this.city + "<br>" + this.address + "<br>" + this.date + ", " + this.time + "<br>" + this.price + "</p></div></div>";
     };
     return Events;
 }(Locations));
