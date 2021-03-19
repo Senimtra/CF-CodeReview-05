@@ -1,9 +1,3 @@
-// ### Create Object arrays (Locations, Restaurants, Events) ###
-
-const locArray = [];
-let restArray = [];
-let eventArray = [];
-
 // ### Create Location objects ###
 
 let charlesChurch = new Locations(
@@ -22,7 +16,31 @@ let zooVienna = new Locations(
   "./images/place_zoovienna.jpg"
 );
 
-// ### Loop function to create Location cards ###
+// ### Create Restaurant objects ###
+
+let lemonLeaf = new Restaurants(
+  "Lemon Leaf",
+  "Vienna",
+  1050,
+  "Kettenbrückengasse 19",
+  "./images/rest_lemonleaf.png",
+  "+43(1)5812308",
+  "Thai",
+  "www.lemonleaf.at"
+);
+
+let sixta = new Restaurants(
+  "SIXTA",
+  "Vienna",
+  1050,
+  "Schönbrunner Straße 21",
+  "./images/rest_sixta.png",
+  "+43 1 58 528 56",
+  "Viennese",
+  "www.sixta-restaurant.at"
+);
+
+//### Loop function to create Location cards ###
 
 function displayLocCards() {
   for (let i = 0; i < locArray.length; i++) {
@@ -32,6 +50,11 @@ function displayLocCards() {
 
 displayLocCards();
 
-////////////////// TEST
+//////////////// TEST
 
 console.log(locArray);
+
+// console.table(locArray);
+// for (let val of locArray) {
+//   document.getElementById("content").innerHTML += val.display();
+// }

@@ -2,6 +2,10 @@
 
 let content = document.getElementById("content");
 
+// ### Create Object array ###
+
+let locArray = [];
+
 // ### Create Parent class Locations with properties (name(object), city, zip, address, image) ###
 
 class Locations {
@@ -36,11 +40,7 @@ class Restaurants extends Locations {
     this.web = web;
   }
   display() {
-    return `${this.display()} Their phone number is ${
-      this.phone
-    } and you can find examples of their delicious ${
-      this.cuisine
-    } on their website: ${this.web}`;
+    content.innerHTML += `<div class='card' style='width: 18rem;'><img src='${this.image}' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>${this.object}<br>${this.zipCode} ${this.city}, ${this.address}${this.phone} <br> ${this.cuisine} cuisine<br>${this.web}</p></div></div>`;
   }
 }
 

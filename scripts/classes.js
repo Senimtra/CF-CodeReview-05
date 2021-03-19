@@ -15,6 +15,8 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 var content = document.getElementById("content");
+// ### Create Object array ###
+var locArray = [];
 // ### Create Parent class Locations with properties (name(object), city, zip, address, image) ###
 var Locations = /** @class */ (function () {
     function Locations(object, city, zipCode, address, image) {
@@ -41,7 +43,7 @@ var Restaurants = /** @class */ (function (_super) {
         return _this;
     }
     Restaurants.prototype.display = function () {
-        return this.display() + " Their phone number is " + this.phone + " and you can find examples of their delicious " + this.cuisine + " on their website: " + this.web;
+        content.innerHTML += "<div class='card' style='width: 18rem;'><img src='" + this.image + "' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>" + this.object + "<br>" + this.zipCode + " " + this.city + ", " + this.address + this.phone + " <br> " + this.cuisine + " cuisine<br>" + this.web + "</p></div></div>";
     };
     return Restaurants;
 }(Locations));
