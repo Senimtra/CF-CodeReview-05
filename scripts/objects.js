@@ -8,17 +8,23 @@ var brooklynBridge = new Locations("Brooklyn Bridge", "Northwest Brooklyn, NY", 
 var rockeCenter = new Locations("Rockefeller Center", "Manhattan, NY", 10112, "Rockefeller Plaza", "./images/loc_rockecenter.jpg");
 var guggenheim = new Locations("Guggenheim Museum", "Manhattan, NY", 10128, "1071 5th Avenue", "./images/loc_guggenheim.jpg");
 // ### Create Restaurant objects ###
-var bigPalace = new Restaurants("The Big Palace", "Manhattan, NY", 10956, "29 3rd Street #203", "./images/rest_.png", "(509) 279-0762", "Indonesian", "www.bigpalace.dot");
-var shazam = new Restaurants("Shazam", "New Hartford, NY", 13413, "24 Kellog Road", "./images/rest_.png", "(508) 561-9818", "Thai", "www.shazam.dot");
-var kingsize = new Restaurants("King Size", "South Fallsburg, NY", 12779, "4845 Transit Road", "./images/rest_.png", "(508) 890-5592", "Spanish", "www.kingsize.dot");
-var modesty = new Restaurants("Modesty", "Binghamton, NY", 13901, "25 Robinson Street", "./images/rest_.png", "(607) 203-1281", "Indian", "www.modesty.at");
-var arcticDeer = new Restaurants("The Arctic Deer", "Flushing, NY", 15050, "34th Avenue", "./images/rest_.png", "(772) 334-3096", "American", "www.thearcticdeer.at");
-var Crown = new Restaurants("The Crown", "Farmingdale, NY", 11735, "61 Executive Blvd", "./images/rest_.png", "(780) 488-1163", "French", "www.thecrown.dot");
-var karmaFarmer = new Restaurants("Karma Farmer", "Woodside, NY", 11377, "4856 44th Street", "./images/rest_.png", "(410) 244-6280", "Indian", "www.karmafarmer.dot");
-var theOak = new Restaurants("The Oak", "Port Washington, NY", 11050, "464 Main Street", "./images/rest_.png", "(413) 269-4095", "Thai", "www.theoak.dot");
+var bigPalace = new Restaurants("The Big Palace", "Manhattan, NY", 10956, "29 3rd Street #203", "./images/rest_bigpalace.jpg", "(509) 279-0762", "Indonesian", "www.bigpalace.dot");
+var shazam = new Restaurants("Shazam", "New Hartford, NY", 13413, "24 Kellog Road", "./images/rest_shazam.jpg", "(508) 561-9818", "Thai", "www.shazam.dot");
+var kingsize = new Restaurants("King Size", "South Fallsburg, NY", 12779, "4845 Transit Road", "./images/rest_kingsize.jpg", "(508) 890-5592", "Spanish", "www.kingsize.dot");
+var modesty = new Restaurants("Modesty", "Binghamton, NY", 13901, "25 Robinson Street", "./images/rest_modesty.jpg", "(607) 203-1281", "American", "www.modesty.at");
+var arcticDeer = new Restaurants("The Arctic Deer", "Flushing, NY", 15050, "34th Avenue", "./images/rest_arcticdeer.jpg", "(772) 334-3096", "American", "www.thearcticdeer.at");
+var Crown = new Restaurants("The Crown", "Farmingdale, NY", 11735, "61 Executive Blvd", "./images/rest_thecrown.jpg", "(780) 488-1163", "French", "www.thecrown.dot");
+var karmaFarmer = new Restaurants("Karma Farmer", "Woodside, NY", 11377, "4856 44th Street", "./images/rest_karmafarmer.jpg", "(410) 244-6280", "Indian", "www.karmafarmer.dot");
+var theOak = new Restaurants("The Oak", "Port Washington, NY", 11050, "464 Main Street", "./images/rest_theoak.jpg", "(413) 269-4095", "Thai", "www.theoak.dot");
 // ### Create Event objects ###
-var kristofferson = new Events("Kris Kristofferson", "Vienna", 1150, "Wiener Stadthalle, Halle F<br>Roland Rainer Platz 1", "./images/eve_kristofferson.jpg", "Fr., 15.11.2021", "20:00", "58,50 EUR");
-var kravitz = new Events("Lenny Kravitz", "Vienna", 1150, "Wiener Stadthalle, Halle D<br>Roland Rainer Platz 1", "./images/eve_kravitz.jpg", "Sat., 09.12.2029", "19:30", "€ 47,80");
+var circus = new Events("The Whimsical Circus", "Albany, NY", 12206, "Stapleton Center, 397 Orange St", "./images/eve_circus.jpg", "Fr., 12/15/2021", "8 p.m.", "$ 69.00");
+var baseball = new Events("Yankee Stadium", "Newark, NY", 12550, "Yankee Stadium, 321 Pine St", "./images/eve_baseball.jpg", "Sat., 09/12/2021", "4 p.m.", "$ 55.00");
+var festival = new Events("Festival 36", "Levittown, NY", 11756, "West Fields, 36 Vincent Blvd", "./images/eve_festival.jpg", "Fr., 04/17/2022", "9 p.m.", "$ 80.00");
+var gallery = new Events("Art Exhibition", "Waterville, NY", 13480, "131 Osborne Ave", "./images/eve_gallery.jpg", "Sat., 09/15/2021", "4 p.m.", "$ 55.00");
+var congress = new Events("World Healthcare Meeting", "Manhattan, NY", 10083, "Madison Square Garden", "./images/eve_congress.jpg", "Mon., 05/03/2021", "9 a.m.", "$ 40.00");
+var concert = new Events("The 4 Live Crew", "Albion, NY", 14411, "Gaines Waterport Rd", "./images/eve_concert.jpg", "Wed., 08/30/2021", "7 p.m.", "$ 65.00");
+var nascar = new Events("Nascar NY 300", "Greenwood Lake, NY", 12572, "Grand Oval, 882 Swede Rd", "./images/eve_nascar.jpg", "Sun., 10/22/2021", "4 p.m.", "$ 55.00");
+var webdev = new Events("Webdeveloper World", "Queens Village, NY", 11427, "Leigh Halls, 155th Ave", "./images/eve_webdev.jpg", "Fr., 06/11/2021", "10 p.m.", "$ 75.00");
 // ### Loop function to create Location cards ###
 function displayLocCards() {
     for (var i = 0; i < locArray.length; i++) {

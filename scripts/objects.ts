@@ -156,26 +156,92 @@ let theOak = new Restaurants(
 
 // ### Create Event objects ###
 
-let kristofferson = new Events(
-  "Kris Kristofferson",
-  "Vienna",
-  1150,
-  "Wiener Stadthalle, Halle F<br>Roland Rainer Platz 1",
-  "./images/eve_kristofferson.jpg",
-  "Fr., 15.11.2021",
-  "20:00",
-  "58,50 EUR"
+let circus = new Events(
+  "The Whimsical Circus",
+  "Albany, NY",
+  12206,
+  "Stapleton Center, 397 Orange St",
+  "./images/eve_circus.jpg",
+  "Fr., 12/15/2021",
+  "8 p.m.",
+  "$ 69.00"
 );
 
-let kravitz = new Events(
-  "Lenny Kravitz",
-  "Vienna",
-  1150,
-  "Wiener Stadthalle, Halle D<br>Roland Rainer Platz 1",
-  "./images/eve_kravitz.jpg",
-  "Sat., 09.12.2029",
-  "19:30",
-  "€ 47,80"
+let baseball = new Events(
+  "Yankee Stadium",
+  "Newark, NY",
+  12550,
+  "Yankee Stadium, 321 Pine St",
+  "./images/eve_baseball.jpg",
+  "Sat., 09/12/2021",
+  "4 p.m.",
+  "$ 55.00"
+);
+
+let festival = new Events(
+  "Festival 36",
+  "Levittown, NY",
+  11756,
+  "West Fields, 36 Vincent Blvd",
+  "./images/eve_festival.jpg",
+  "Fr., 04/17/2022",
+  "9 p.m.",
+  "$ 80.00"
+);
+
+let gallery = new Events(
+  "Art Exhibition",
+  "Waterville, NY",
+  13480,
+  "131 Osborne Ave",
+  "./images/eve_gallery.jpg",
+  "Sat., 09/15/2021",
+  "4 p.m.",
+  "$ 55.00"
+);
+
+let congress = new Events(
+  "World Healthcare Meeting",
+  "Manhattan, NY",
+  10083,
+  "Madison Square Garden",
+  "./images/eve_congress.jpg",
+  "Mon., 05/03/2021",
+  "9 a.m.",
+  "$ 40.00"
+);
+
+let concert = new Events(
+  "The 4 Live Crew",
+  "Albion, NY",
+  14411,
+  "Gaines Waterport Rd",
+  "./images/eve_concert.jpg",
+  "Wed., 08/30/2021",
+  "7 p.m.",
+  "$ 65.00"
+);
+
+let nascar = new Events(
+  "Nascar NY 300",
+  "Greenwood Lake, NY",
+  12572,
+  "Grand Oval, 882 Swede Rd",
+  "./images/eve_nascar.jpg",
+  "Sun., 10/22/2021",
+  "4 p.m.",
+  "$ 55.00"
+);
+
+let webdev = new Events(
+  "Webdeveloper World",
+  "Queens Village, NY",
+  11427,
+  "Leigh Halls, 155th Ave",
+  "./images/eve_webdev.jpg",
+  "Fr., 06/11/2021",
+  "10 p.m.",
+  "$ 75.00"
 );
 
 // ### Loop function to create Location cards ###
