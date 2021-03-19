@@ -43,7 +43,7 @@ var Restaurants = /** @class */ (function (_super) {
         return _this;
     }
     Restaurants.prototype.display = function () {
-        content.innerHTML += "<div class='card' style='width: 18rem;'><img src='" + this.image + "' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>" + this.object + "<br>" + this.zipCode + " " + this.city + ", " + this.address + this.phone + " <br> " + this.cuisine + " cuisine<br>" + this.web + "</p></div></div>";
+        content.innerHTML += "<div class='card' style='width: 18rem;'><img src='" + this.image + "' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>" + this.object + "<br>" + this.zipCode + " " + this.city + "<br>" + this.address + "<br>" + this.phone + "<br>" + this.cuisine + " cuisine<br>" + this.web + "</p></div></div>";
     };
     return Restaurants;
 }(Locations));
@@ -58,7 +58,7 @@ var Events = /** @class */ (function (_super) {
         return _this;
     }
     Events.prototype.display = function () {
-        return this.display() + " The event will take place at " + this.time + " on " + this.date + ". The tickets will cost " + this.price + ".";
+        content.innerHTML += "<div class='card' style='width: 18rem;'><img src='" + this.image + "' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>" + this.object + "<br>" + this.zipCode + " " + this.city + "<br>" + this.address + "<br>" + this.date + ", " + this.time + "<br>" + this.price + "</p></div></div>";
     };
     return Events;
 }(Locations));

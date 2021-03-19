@@ -40,16 +40,16 @@ class Restaurants extends Locations {
     this.web = web;
   }
   display() {
-    content.innerHTML += `<div class='card' style='width: 18rem;'><img src='${this.image}' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>${this.object}<br>${this.zipCode} ${this.city}, ${this.address}${this.phone} <br> ${this.cuisine} cuisine<br>${this.web}</p></div></div>`;
+    content.innerHTML += `<div class='card' style='width: 18rem;'><img src='${this.image}' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>${this.object}<br>${this.zipCode} ${this.city}<br>${this.address}<br>${this.phone}<br>${this.cuisine} cuisine<br>${this.web}</p></div></div>`;
   }
 }
 
 // ### Create Child class Events with properties (date, time, ticket-price) ###
 
 class Events extends Locations {
-  date: Date;
-  time: TimeRanges;
-  price: PaymentCurrencyAmount;
+  date: string;
+  time: string;
+  price: string;
   constructor(object, city, zipCode, address, image, date, time, price) {
     super(object, city, zipCode, address, image);
     this.date = date;
@@ -57,8 +57,6 @@ class Events extends Locations {
     this.price = price;
   }
   display() {
-    return `${this.display()} The event will take place at ${this.time} on ${
-      this.date
-    }. The tickets will cost ${this.price}.`;
+    content.innerHTML += `<div class='card' style='width: 18rem;'><img src='${this.image}' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>${this.object}<br>${this.zipCode} ${this.city}<br>${this.address}<br>${this.date}, ${this.time}<br>${this.price}</p></div></div>`;
   }
 }

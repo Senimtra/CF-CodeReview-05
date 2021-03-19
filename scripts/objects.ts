@@ -40,7 +40,31 @@ let sixta = new Restaurants(
   "www.sixta-restaurant.at"
 );
 
-//### Loop function to create Location cards ###
+// ### Create Event objects ###
+
+let kristofferson = new Events(
+  "Kris Kristofferson",
+  "Vienna",
+  1150,
+  "Wiener Stadthalle, Halle F<br>Roland Rainer Platz 1",
+  "./images/eve_kristofferson.jpg",
+  "Fr., 15.11.2021",
+  "20:00",
+  "58,50 EUR"
+);
+
+let kravitz = new Events(
+  "Lenny Kravitz",
+  "Vienna",
+  1150,
+  "Wiener Stadthalle, Halle D<br>Roland Rainer Platz 1",
+  "./images/eve_kravitz.jpg",
+  "Sat., 09.12.2029",
+  "19:30",
+  "€ 47,80"
+);
+
+// ### Loop function to create Location cards ###
 
 function displayLocCards() {
   for (let i = 0; i < locArray.length; i++) {
@@ -52,7 +76,7 @@ displayLocCards();
 
 //////////////// TEST
 
-console.log(locArray);
+console.table(locArray);
 
 // console.table(locArray);
 // for (let val of locArray) {
