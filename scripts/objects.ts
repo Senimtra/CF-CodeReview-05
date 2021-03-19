@@ -246,13 +246,13 @@ let webdev = new Events(
 
 // ### Loop function to create Location cards ###
 
-function displayLocCards() {
+function displayAllLocCards() {
   for (let i = 0; i < locArray.length; i++) {
     locArray[i].display();
   }
 }
 
-displayLocCards();
+displayAllLocCards();
 
 // ### Remove Restaurant objects from Locations array ###
 

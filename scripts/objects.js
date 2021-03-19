@@ -26,12 +26,12 @@ var concert = new Events("The 4 Live Crew", "Albion, NY", 14411, "Gaines Waterpo
 var nascar = new Events("Nascar NY 300", "Greenwood Lake, NY", 12572, "Grand Oval, 882 Swede Rd", "./images/eve_nascar.jpg", "Sun., 10/22/2021", "4 p.m.", "$ 55.00");
 var webdev = new Events("Webdeveloper World", "Queens Village, NY", 11427, "Leigh Halls, 155th Ave", "./images/eve_webdev.jpg", "Fr., 06/11/2021", "10 p.m.", "$ 75.00");
 // ### Loop function to create Location cards ###
-function displayLocCards() {
+function displayAllLocCards() {
     for (var i = 0; i < locArray.length; i++) {
         locArray[i].display();
     }
 }
-displayLocCards();
+displayAllLocCards();
 // ### Remove Restaurant objects from Locations array ###
 locArray = locArray.filter(function (val) { return !restArray.includes(val); });
 locArray = locArray.filter(function (val) { return !eveArray.includes(val); });

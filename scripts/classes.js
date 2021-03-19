@@ -30,7 +30,7 @@ var Locations = /** @class */ (function () {
         locArray.push(this);
     }
     Locations.prototype.display = function () {
-        contentAll.innerHTML += "<div class='card' style='width: 18rem;'><img src='" + this.image + "' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>" + this.object + "<br>" + this.zipCode + " " + this.city + "<br>" + this.address + "</p></div></div>";
+        contentAll.innerHTML += "<div class='card col-sm-3 my-3 mx-auto' style='max-width: 540px'><img src='" + this.image + "' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>" + this.object + "<br>" + this.zipCode + " " + this.city + "<br>" + this.address + "</p></div></div>";
     };
     return Locations;
 }());
@@ -46,7 +46,7 @@ var Restaurants = /** @class */ (function (_super) {
         return _this;
     }
     Restaurants.prototype.display = function () {
-        contentAll.innerHTML += "<div class='card' style='width: 18rem;'><img src='" + this.image + "' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>" + this.object + "<br>" + this.zipCode + " " + this.city + "<br>" + this.address + "<br>" + this.phone + "<br>" + this.cuisine + " cuisine<br>" + this.web + "</p></div></div>";
+        contentAll.innerHTML += "<div class='card col-sm-3 my-3 mx-auto' style='max-width: 540px'><img src='" + this.image + "' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>" + this.object + "<br>" + this.zipCode + " " + this.city + "<br>" + this.address + "<br>" + this.phone + "<br>" + this.cuisine + " cuisine<br>" + this.web + "</p></div></div>";
     };
     return Restaurants;
 }(Locations));
@@ -62,7 +62,7 @@ var Events = /** @class */ (function (_super) {
         return _this;
     }
     Events.prototype.display = function () {
-        contentAll.innerHTML += "<div class='card' style='width: 18rem;'><img src='" + this.image + "' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>" + this.object + "<br>" + this.zipCode + " " + this.city + "<br>" + this.address + "<br>" + this.date + ", " + this.time + "<br>" + this.price + "</p></div></div>";
+        contentAll.innerHTML += "<div class='card col-sm-3 my-3 mx-auto' style='max-width: 540px'><img src='" + this.image + "' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>" + this.object + "<br>" + this.zipCode + " " + this.city + "<br>" + this.address + "<br>" + this.date + ", " + this.time + "<br>" + this.price + "</p></div></div>";
     };
     return Events;
 }(Locations));
