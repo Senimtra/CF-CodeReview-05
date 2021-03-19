@@ -4,7 +4,7 @@ let centralPark = new Locations(
   "Central Park",
   "Manhattan, NY",
   10019,
-  "200 Central Park S",
+  "200 Central Park",
   "./images/loc_centralpark.jpg"
 );
 
@@ -28,7 +28,7 @@ let timesSquare = new Locations(
   "Times Square",
   "Manhattan, NY",
   10036,
-  "Times Square Brm",
+  "Times Square Blvd",
   "./images/loc_timessquare.jpg"
 );
 
@@ -95,7 +95,7 @@ let kingsize = new Restaurants(
   "4845 Transit Road",
   "./images/rest_kingsize.jpg",
   "(508) 890-5592",
-  "Spanish",
+  "American",
   "www.kingsize.dot"
 );
 
@@ -106,8 +106,8 @@ let modesty = new Restaurants(
   "25 Robinson Street",
   "./images/rest_modesty.jpg",
   "(607) 203-1281",
-  "American",
-  "www.modesty.at"
+  "Spanish",
+  "www.modesty.dot"
 );
 
 let arcticDeer = new Restaurants(
@@ -118,18 +118,18 @@ let arcticDeer = new Restaurants(
   "./images/rest_arcticdeer.jpg",
   "(772) 334-3096",
   "American",
-  "www.thearcticdeer.at"
+  "www.thearcticdeer.dot"
 );
 
-let Crown = new Restaurants(
-  "The Crown",
+let tomsDiner = new Restaurants(
+  "Tom's Diner",
   "Farmingdale, NY",
   11735,
   "61 Executive Blvd",
-  "./images/rest_thecrown.jpg",
+  "./images/rest_tomsdiner.jpg",
   "(780) 488-1163",
   "French",
-  "www.thecrown.dot"
+  "www.tomsdiner.dot"
 );
 
 let karmaFarmer = new Restaurants(
@@ -143,15 +143,15 @@ let karmaFarmer = new Restaurants(
   "www.karmafarmer.dot"
 );
 
-let theOak = new Restaurants(
-  "The Oak",
+let anyamanee = new Restaurants(
+  "Anyamanee",
   "Port Washington, NY",
   11050,
   "464 Main Street",
-  "./images/rest_theoak.jpg",
+  "./images/rest_anyamanee.jpg",
   "(413) 269-4095",
   "Thai",
-  "www.theoak.dot"
+  "www.anyamanee.dot"
 );
 
 // ### Create Event objects ###
@@ -168,7 +168,7 @@ let circus = new Events(
 );
 
 let baseball = new Events(
-  "Yankee Stadium",
+  "World Series MLB",
   "Newark, NY",
   12550,
   "Yankee Stadium, 321 Pine St",

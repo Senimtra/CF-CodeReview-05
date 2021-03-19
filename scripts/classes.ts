@@ -1,6 +1,6 @@
 // ### Set HTML-anchor ###
 
-let content = document.getElementById("content");
+let contentAll = document.getElementById("contentAll");
 
 // ### Create Object arrays for classes (Locations, Restaurants, Events) ###
 
@@ -25,7 +25,7 @@ class Locations {
     locArray.push(this);
   }
   display() {
-    content.innerHTML += `<div class='card' style='width: 18rem;'><img src='${this.image}' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>${this.object}<br>${this.zipCode} ${this.city}, ${this.address}</p></div></div>`;
+    contentAll.innerHTML += `<div class='card' style='width: 18rem;'><img src='${this.image}' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>${this.object}<br>${this.zipCode} ${this.city}<br>${this.address}</p></div></div>`;
   }
 }
 
@@ -43,7 +43,7 @@ class Restaurants extends Locations {
     restArray.push(this);
   }
   display() {
-    content.innerHTML += `<div class='card' style='width: 18rem;'><img src='${this.image}' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>${this.object}<br>${this.zipCode} ${this.city}<br>${this.address}<br>${this.phone}<br>${this.cuisine} cuisine<br>${this.web}</p></div></div>`;
+    contentAll.innerHTML += `<div class='card' style='width: 18rem;'><img src='${this.image}' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>${this.object}<br>${this.zipCode} ${this.city}<br>${this.address}<br>${this.phone}<br>${this.cuisine} cuisine<br>${this.web}</p></div></div>`;
   }
 }
 
@@ -61,6 +61,6 @@ class Events extends Locations {
     eveArray.push(this);
   }
   display() {
-    content.innerHTML += `<div class='card' style='width: 18rem;'><img src='${this.image}' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>${this.object}<br>${this.zipCode} ${this.city}<br>${this.address}<br>${this.date}, ${this.time}<br>${this.price}</p></div></div>`;
+    contentAll.innerHTML += `<div class='card' style='width: 18rem;'><img src='${this.image}' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>${this.object}<br>${this.zipCode} ${this.city}<br>${this.address}<br>${this.date}, ${this.time}<br>${this.price}</p></div></div>`;
   }
 }
