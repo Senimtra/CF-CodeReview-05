@@ -19,7 +19,7 @@ class Locations {
     locArray.push(this);
   }
   display() {
-    content.innerHTML = `<div class='card' style='width: 18rem;'><img src='${this.image}' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>${this.object}<br>${this.zipCode} ${this.city}, ${this.address}</p></div></div>`;
+    content.innerHTML += `<div class='card' style='width: 18rem;'><img src='${this.image}' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>${this.object}<br>${this.zipCode} ${this.city}, ${this.address}</p></div></div>`;
   }
 }
 
@@ -62,27 +62,3 @@ class Events extends Locations {
     }. The tickets will cost ${this.price}.`;
   }
 }
-
-// ### Create Locations [array] ###
-
-let locArray = [];
-
-// ### Create Location objects ###
-
-let charlesChurch = new Locations(
-  "Charles Church",
-  "Vienna",
-  1010,
-  "Karlsplatz 1",
-  "./images/place_charleschurch.jpg"
-);
-
-let zooVienna = new Locations(
-  "Zoo Vienna",
-  "Vienna",
-  1130,
-  "Maxingstraße 13b",
-  "./images/place_zoovienna.jpg"
-);
-
-locArray[0].display();
