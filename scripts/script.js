@@ -1,4 +1,4 @@
-// ### Create Parent class Locations with properties (name(object), city, zip, address, image) ###
+// ### Set HTML-anchor ###
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -14,6 +14,8 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+var content = document.getElementById("content");
+// ### Create Parent class Locations with properties (name(object), city, zip, address, image) ###
 var Locations = /** @class */ (function () {
     function Locations(object, city, zipCode, address, image) {
         this.object = object;
@@ -21,9 +23,10 @@ var Locations = /** @class */ (function () {
         this.zipCode = zipCode;
         this.address = address;
         this.image = image;
+        locArray.push(this);
     }
     Locations.prototype.display = function () {
-        return this.object + " is located in " + this.address + ", " + this.zipCode + " " + this.city + " <img src=\"" + this.image;
+        content.innerHTML = "<div class='card' style='width: 18rem;'><img src='" + this.image + "' class='card-img-top' alt=''><div class='card-body'><p class='card-text'>" + this.object + "<br>" + this.zipCode + " " + this.city + ", " + this.address + "</p></div></div>";
     };
     return Locations;
 }());
@@ -57,3 +60,9 @@ var Events = /** @class */ (function (_super) {
     };
     return Events;
 }(Locations));
+// ### Create Locations [array] ###
+var locArray = [];
+// ### Create Location objects ###
+var charlesChurch = new Locations("Charles Church", "Vienna", 1010, "Karlsplatz 1", "./images/place_charleschurch.jpg");
+var zooVienna = new Locations("Zoo Vienna", "Vienna", 1130, "Maxingstraße 13b", "./images/place_zoovienna.jpg");
+locArray[0].display();
