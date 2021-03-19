@@ -21,15 +21,16 @@ var restArray = [];
 var eveArray = [];
 // ### Create Parent class Locations with properties (name(object), city, zip, address, image) ###
 var Locations = /** @class */ (function () {
-    function Locations(object, city, zipCode, address, image) {
+    function Locations(object, city, zipCode, address, image, visited) {
         this.object = object;
         this.city = city;
         this.zipCode = zipCode;
         this.address = address;
         this.image = image;
+        this.visited = visited;
         locArray.push(this);
     }
-    Locations.prototype.display = function () {
+    Locations.prototype.displayLoc = function () {
         content.innerHTML += "<div class='card col-lg-3 col-md-6'><img src='" + this.image + "' class='card-img-top d-none d-md-block' alt=''><div class='card-body'><p class='card-text'>" + this.object + "<br>" + this.zipCode + " " + this.city + "<br>" + this.address + "</p></div></div>";
     };
     return Locations;
@@ -37,15 +38,15 @@ var Locations = /** @class */ (function () {
 // ### Create Child class Restaurants with properties (phone-number, cuisine, web-address) ###
 var Restaurants = /** @class */ (function (_super) {
     __extends(Restaurants, _super);
-    function Restaurants(object, city, zipCode, address, image, phone, cuisine, web) {
-        var _this = _super.call(this, object, city, zipCode, address, image) || this;
+    function Restaurants(object, city, zipCode, address, image, visited, phone, cuisine, web) {
+        var _this = _super.call(this, object, city, zipCode, address, image, visited) || this;
         _this.phone = phone;
         _this.cuisine = cuisine;
         _this.web = web;
         restArray.push(_this);
         return _this;
     }
-    Restaurants.prototype.display = function () {
+    Restaurants.prototype.displayRest = function () {
         content.innerHTML += "<div class='card col-lg-3 col-md-6'><img src='" + this.image + "' class='card-img-top d-none d-md-block' alt=''><div class='card-body'><p class='card-text'>" + this.object + "<br>" + this.zipCode + " " + this.city + "<br>" + this.address + "<br>" + this.phone + "<br>" + this.cuisine + " cuisine<br>" + this.web + "</p></div></div>";
     };
     return Restaurants;
@@ -53,15 +54,15 @@ var Restaurants = /** @class */ (function (_super) {
 // ### Create Child class Events with properties (date, time, ticket-price) ###
 var Events = /** @class */ (function (_super) {
     __extends(Events, _super);
-    function Events(object, city, zipCode, address, image, date, time, price) {
-        var _this = _super.call(this, object, city, zipCode, address, image) || this;
+    function Events(object, city, zipCode, address, image, visited, date, time, price) {
+        var _this = _super.call(this, object, city, zipCode, address, image, visited) || this;
         _this.date = date;
         _this.time = time;
         _this.price = price;
         eveArray.push(_this);
         return _this;
     }
-    Events.prototype.display = function () {
+    Events.prototype.displayEve = function () {
         content.innerHTML += "<div class='card col-lg-3 col-md-6'><img src='" + this.image + "' class='card-img-top d-none d-md-block' alt=''><div class='card-body'><p class='card-text'>" + this.object + "<br>" + this.zipCode + " " + this.city + "<br>" + this.address + "<br>" + this.date + ", " + this.time + "<br>" + this.price + "</p></div></div>";
     };
     return Events;

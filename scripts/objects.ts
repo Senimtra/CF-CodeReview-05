@@ -5,7 +5,8 @@ let centralPark = new Locations(
   "Manhattan, NY",
   10019,
   "200 Central Park",
-  "./images/loc_centralpark.jpg"
+  "./images/loc_centralpark.jpg",
+  "Jan 03 2021 02:22:07 PM"
 );
 
 let statueLiberty = new Locations(
@@ -13,7 +14,8 @@ let statueLiberty = new Locations(
   "Manhattan, NY",
   10004,
   "Liberty Island, New York Harbor",
-  "./images/loc_statueliberty.jpg"
+  "./images/loc_statueliberty.jpg",
+  "Jan 07 2021 08:55:10 AM"
 );
 
 let empireState = new Locations(
@@ -21,7 +23,8 @@ let empireState = new Locations(
   "Manhattan, NY",
   10118,
   "350 Fifth Avenue",
-  "./images/loc_empirestate.jpg"
+  "./images/loc_empirestate.jpg",
+  "May 19 2020 11:06:01 PM"
 );
 
 let timesSquare = new Locations(
@@ -29,7 +32,8 @@ let timesSquare = new Locations(
   "Manhattan, NY",
   10036,
   "Times Square Blvd",
-  "./images/loc_timessquare.jpg"
+  "./images/loc_timessquare.jpg",
+  "Aug 26 2020 07:52:47 PM"
 );
 
 let museumModern = new Locations(
@@ -37,7 +41,8 @@ let museumModern = new Locations(
   "Manhattan, NY",
   10019,
   "11 W 53rd Street",
-  "./images/loc_museummodern.jpg"
+  "./images/loc_museummodern.jpg",
+  "Mar 27 2020 09:54:25 PM"
 );
 
 let brooklynBridge = new Locations(
@@ -45,7 +50,8 @@ let brooklynBridge = new Locations(
   "Northwest Brooklyn, NY",
   11201,
   "Brooklyn Bridge Road",
-  "./images/loc_brooklynbridge.jpg"
+  "./images/loc_brooklynbridge.jpg",
+  "May 10 2020 10:48:51 AM"
 );
 
 let rockeCenter = new Locations(
@@ -53,7 +59,8 @@ let rockeCenter = new Locations(
   "Manhattan, NY",
   10112,
   "Rockefeller Plaza",
-  "./images/loc_rockecenter.jpg"
+  "./images/loc_rockecenter.jpg",
+  "Oct 18 2020 11:14:11 PM"
 );
 
 let guggenheim = new Locations(
@@ -61,7 +68,8 @@ let guggenheim = new Locations(
   "Manhattan, NY",
   10128,
   "1071 5th Avenue",
-  "./images/loc_guggenheim.jpg"
+  "./images/loc_guggenheim.jpg",
+  "Jul 19 2020 08:47:36 PM"
 );
 
 // ### Create Restaurant objects ###
@@ -72,6 +80,7 @@ let bigPalace = new Restaurants(
   10956,
   "29 3rd Street #203",
   "./images/rest_bigpalace.jpg",
+  "Aug 22 2020 06:13:45 PM",
   "(509) 279-0762",
   "Indonesian",
   "www.bigpalace.dot"
@@ -83,6 +92,7 @@ let shazam = new Restaurants(
   13413,
   "24 Kellog Road",
   "./images/rest_shazam.jpg",
+  "Dec 22 2020 08:37:44 PM",
   "(508) 561-9818",
   "Thai",
   "www.shazam.dot"
@@ -94,6 +104,7 @@ let kingsize = new Restaurants(
   12779,
   "4845 Transit Road",
   "./images/rest_kingsize.jpg",
+  "Sep 23 2020 01:21:05 PM",
   "(508) 890-5592",
   "American",
   "www.kingsize.dot"
@@ -105,6 +116,7 @@ let modesty = new Restaurants(
   13901,
   "25 Robinson Street",
   "./images/rest_modesty.jpg",
+  "Nov 04 2020 06:27:18 PM",
   "(607) 203-1281",
   "Spanish",
   "www.modesty.dot"
@@ -116,6 +128,7 @@ let arcticDeer = new Restaurants(
   15050,
   "34th Avenue",
   "./images/rest_arcticdeer.jpg",
+  "Jun 11 2020 04:14:55 PM",
   "(772) 334-3096",
   "American",
   "www.thearcticdeer.dot"
@@ -127,6 +140,7 @@ let tomsDiner = new Restaurants(
   11735,
   "61 Executive Blvd",
   "./images/rest_tomsdiner.jpg",
+  "Dec 03 2020 07:33:34 PM",
   "(780) 488-1163",
   "French",
   "www.tomsdiner.dot"
@@ -138,6 +152,7 @@ let karmaFarmer = new Restaurants(
   11377,
   "4856 44th Street",
   "./images/rest_karmafarmer.jpg",
+  "Jan 14 2021 08:40:11 PM",
   "(410) 244-6280",
   "Indian",
   "www.karmafarmer.dot"
@@ -149,6 +164,7 @@ let anyamanee = new Restaurants(
   11050,
   "464 Main Street",
   "./images/rest_anyamanee.jpg",
+  "Feb 01 2021 09:27:07 PM",
   "(413) 269-4095",
   "Thai",
   "www.anyamanee.dot"
@@ -162,6 +178,7 @@ let circus = new Events(
   12206,
   "Stapleton Center, 397 Orange St",
   "./images/eve_circus.jpg",
+  "Aug 08 2020 03:16:21 PM",
   "Fr., 12/15/2021",
   "8 p.m.",
   "$ 69.00"
@@ -173,6 +190,7 @@ let baseball = new Events(
   12550,
   "Yankee Stadium, 321 Pine St",
   "./images/eve_baseball.jpg",
+  "Oct 12 2020 10:56:18 AM",
   "Sat., 09/12/2021",
   "4 p.m.",
   "$ 55.00"
@@ -184,6 +202,7 @@ let festival = new Events(
   11756,
   "West Fields, 36 Vincent Blvd",
   "./images/eve_festival.jpg",
+  "Aug 14 2020 09:03:07 PM",
   "Fr., 04/17/2022",
   "9 p.m.",
   "$ 80.00"
@@ -195,6 +214,7 @@ let gallery = new Events(
   13480,
   "131 Osborne Ave",
   "./images/eve_gallery.jpg",
+  "Dec 28 2020 04:22:59 PM",
   "Sat., 09/15/2021",
   "4 p.m.",
   "$ 55.00"
@@ -206,6 +226,7 @@ let congress = new Events(
   10083,
   "Madison Square Garden",
   "./images/eve_congress.jpg",
+  "May 19 2020 02:24:18 PM",
   "Mon., 05/03/2021",
   "9 a.m.",
   "$ 40.00"
@@ -217,6 +238,7 @@ let concert = new Events(
   14411,
   "Gaines Waterport Rd",
   "./images/eve_concert.jpg",
+  "Feb 23 2021 08:10:01 PM",
   "Wed., 08/30/2021",
   "7 p.m.",
   "$ 65.00"
@@ -228,6 +250,7 @@ let nascar = new Events(
   12572,
   "Grand Oval, 882 Swede Rd",
   "./images/eve_nascar.jpg",
+  "Jul 17 2020 04:33:14 PM",
   "Sun., 10/22/2021",
   "4 p.m.",
   "$ 55.00"
@@ -239,6 +262,7 @@ let webdev = new Events(
   11427,
   "Leigh Halls, 155th Ave",
   "./images/eve_webdev.jpg",
+  "May 08 2020 09:25:00 AM",
   "Fr., 06/11/2021",
   "10 p.m.",
   "$ 75.00"
@@ -262,7 +286,7 @@ firstHeader();
 
 function displayLocCards() {
   for (let i = 0; i < locArray.length; i++) {
-    locArray[i].display();
+    locArray[i].displayLoc();
   }
 }
 
@@ -281,7 +305,7 @@ secondHeader();
 
 function displayRestCards() {
   for (let i = 0; i < restArray.length; i++) {
-    restArray[i].display();
+    restArray[i].displayRest();
   }
 }
 
@@ -300,7 +324,7 @@ thirdHeader();
 
 function displayEveCards() {
   for (let i = 0; i < eveArray.length; i++) {
-    eveArray[i].display();
+    eveArray[i].displayEve();
   }
 }
 
@@ -321,3 +345,5 @@ console.log(eveArray);
 // const listEvents = locArray.filter((e) => e.index.includes("Events"));
 
 // array1 = array1.filter(val => !array2.includes(val));
+
+console.table(restArray);

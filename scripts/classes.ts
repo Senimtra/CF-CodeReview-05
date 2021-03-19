@@ -16,15 +16,17 @@ class Locations {
   zipCode: number;
   address: string;
   image: string;
-  constructor(object, city, zipCode, address, image) {
+  visited: string;
+  constructor(object, city, zipCode, address, image, visited) {
     this.object = object;
     this.city = city;
     this.zipCode = zipCode;
     this.address = address;
     this.image = image;
+    this.visited = visited;
     locArray.push(this);
   }
-  display() {
+  displayLoc() {
     content.innerHTML += `<div class='card col-lg-3 col-md-6'><img src='${this.image}' class='card-img-top d-none d-md-block' alt=''><div class='card-body'><p class='card-text'>${this.object}<br>${this.zipCode} ${this.city}<br>${this.address}</p></div></div>`;
   }
 }
@@ -35,14 +37,24 @@ class Restaurants extends Locations {
   phone: string;
   cuisine: string;
   web: string;
-  constructor(object, city, zipCode, address, image, phone, cuisine, web) {
-    super(object, city, zipCode, address, image);
+  constructor(
+    object,
+    city,
+    zipCode,
+    address,
+    image,
+    visited,
+    phone,
+    cuisine,
+    web
+  ) {
+    super(object, city, zipCode, address, image, visited);
     this.phone = phone;
     this.cuisine = cuisine;
     this.web = web;
     restArray.push(this);
   }
-  display() {
+  displayRest() {
     content.innerHTML += `<div class='card col-lg-3 col-md-6'><img src='${this.image}' class='card-img-top d-none d-md-block' alt=''><div class='card-body'><p class='card-text'>${this.object}<br>${this.zipCode} ${this.city}<br>${this.address}<br>${this.phone}<br>${this.cuisine} cuisine<br>${this.web}</p></div></div>`;
   }
 }
@@ -53,14 +65,24 @@ class Events extends Locations {
   date: string;
   time: string;
   price: string;
-  constructor(object, city, zipCode, address, image, date, time, price) {
-    super(object, city, zipCode, address, image);
+  constructor(
+    object,
+    city,
+    zipCode,
+    address,
+    image,
+    visited,
+    date,
+    time,
+    price
+  ) {
+    super(object, city, zipCode, address, image, visited);
     this.date = date;
     this.time = time;
     this.price = price;
     eveArray.push(this);
   }
-  display() {
+  displayEve() {
     content.innerHTML += `<div class='card col-lg-3 col-md-6'><img src='${this.image}' class='card-img-top d-none d-md-block' alt=''><div class='card-body'><p class='card-text'>${this.object}<br>${this.zipCode} ${this.city}<br>${this.address}<br>${this.date}, ${this.time}<br>${this.price}</p></div></div>`;
   }
 }
