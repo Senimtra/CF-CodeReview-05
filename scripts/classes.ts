@@ -26,15 +26,16 @@ class Locations {
     this.visited = visited;
     locArray.push(this);
   }
+
   display() {
-    content.innerHTML += `<div class='card col-lg-3 col-md-6'>
-    
+    content.innerHTML += `<div class='card col-md-3 d-flex flex-column my-3 p-1'>
+  
     <img src='${this.image}' class='card-img-top d-none d-md-block' alt=''>
     
-    <div class='card-body d-flex justify-content-between'>    
-    <div><p class='card-text'>${this.object}<br>${this.zipCode} ${this.city}<br>${this.address}</p></div>
+    <div class='card-body px-2 pt-0'>    
+    <div><div class='card-text1'>${this.object}</div><div class='card-text2'>${this.zipCode} ${this.city}<br>${this.address}</div></div>
         
-    <div class="visited"><i>created:<br>${this.visited}</i></div></div>
+    <div class="visited"><br><i>created:<br>${this.visited}</i></div></div>
     
     </div>`;
   }
@@ -63,16 +64,17 @@ class Restaurants extends Locations {
     this.web = web;
     restArray.push(this);
   }
+
   display() {
-    content.innerHTML += `<div class='card col-lg-3 col-md-6'>
+    content.innerHTML += `<div class='card col-md-3 d-flex flex-column my-3 p-1'>
     
     <img src='${this.image}' class='card-img-top d-none d-md-block' alt=''>
     
-    <div class='card-body d-flex justify-content-between'>
+    <div class='card-body px-2 pt-0'>
     
-    <div><p class='card-text'>${this.object}<br>${this.zipCode} ${this.city}<br>${this.address}<br>${this.phone}<br>${this.cuisine} cuisine<br>${this.web}</p></div>
+    <div><div class='card-text1'>${this.object}</div><div class='card-text2'>${this.zipCode} ${this.city}<br>${this.address}<br>${this.phone}<br>${this.cuisine} cuisine<br>${this.web}</div></div>
 
-    <div class="visited"><i>created:<br>${this.visited}</i></div></div>
+    <div class="visited"><br><i>created:<br>${this.visited}</i></div></div>
   
     </div>`;
   }
@@ -101,16 +103,17 @@ class Events extends Locations {
     this.price = price;
     eveArray.push(this);
   }
+
   display() {
-    content.innerHTML += `<div class='card col-lg-3 col-md-6'>
+    content.innerHTML += `<div class='card col-md-3 d-flex flex-column my-3 p-1'>
     
     <img src='${this.image}' class='card-img-top d-none d-md-block' alt=''>
     
-    <div class='card-body d-flex justify-content-between'>
+    <div class='card-body px-2 pt-0'>
     
-    <div><p class='card-text'>${this.object}<br>${this.zipCode} ${this.city}<br>${this.address}<br>${this.date}, ${this.time}<br>${this.price}</div>
+    <div><div class='card-text1'>${this.object}</div><div class='card-text2'>${this.zipCode} ${this.city}<br>${this.address}<br>${this.date}, ${this.time}<br>${this.price}</div></div>
 
-    <div class="visited"><i>created:<br>${this.visited}</i></div></div>
+    <div class="visited"><br><i>created:<br>${this.visited}</i></div></div>
   
     </div>`;
   }

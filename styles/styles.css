@@ -1,10 +1,32 @@
 body {
-  background: url(../images/newyork_bg.jpg) no-repeat center center fixed;
+  background: url(../images/newyork_bg2.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
 #header {
   height: 3.5em;
+}
+
+.headerIn {
+  background-color: #10212dc2;
+  border-radius: 0.15em;
+  -webkit-box-shadow: 0px 0px 1px black;
+          box-shadow: 0px 0px 1px black;
+  color: #e2e2e2be;
+  font-size: 2em;
+  font-family: "Amatic SC", cursive;
+  margin: 0.1em;
+}
+
+.headerIn img {
+  position: relative;
+  top: 0.15em;
+  height: 1.2em;
+  width: 7em;
+}
+
+.headerOut {
+  background-color: #a5a5a5e0;
 }
 
 .container {
@@ -20,14 +42,43 @@ a:active {
   height: 50vh;
 }
 
+.card {
+  background-color: #a5a5a5e0;
+  -webkit-box-shadow: 0px 0px 2px black;
+          box-shadow: 0px 0px 2px black;
+}
+
+.card img {
+  -webkit-box-shadow: 0px 0px 2px black;
+          box-shadow: 0px 0px 2px black;
+}
+
+.card-text1 {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #10212de6;
+  font-family: "Amatic SC", cursive;
+}
+
+.card-text2 {
+  font-size: 0.8em;
+  color: #10212de6;
+}
+
+.card-body {
+  background-color: #e2e2e2be;
+  border-bottom-left-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
+  border-top: 0.35em solid #a5a5a5e0;
+}
+
 .visited {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  text-align: right;
   font-size: 0.5em;
+}
+
+@media screen and (max-width: 766px) {
+  .headerIn img {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
