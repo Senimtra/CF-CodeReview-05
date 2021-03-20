@@ -20,6 +20,7 @@ var locArray = [];
 var restArray = [];
 var eveArray = [];
 // ### Create Parent class Locations with properties (name(object), city, zip, address, image) ###
+// ### added "visited" as a sort-timestamp later on ###
 var Locations = /** @class */ (function () {
     function Locations(object, city, zipCode, address, image, visited) {
         this.object = object;
@@ -36,6 +37,7 @@ var Locations = /** @class */ (function () {
     return Locations;
 }());
 // ### Create Child class Restaurants with properties (phone-number, cuisine, web-address) ###
+// ### added "visited" as a sort-timestamp later on ###
 var Restaurants = /** @class */ (function (_super) {
     __extends(Restaurants, _super);
     function Restaurants(object, city, zipCode, address, image, visited, phone, cuisine, web) {
@@ -52,6 +54,7 @@ var Restaurants = /** @class */ (function (_super) {
     return Restaurants;
 }(Locations));
 // ### Create Child class Events with properties (date, time, ticket-price) ###
+// ### added "visited" as a sort-timestamp later on ###
 var Events = /** @class */ (function (_super) {
     __extends(Events, _super);
     function Events(object, city, zipCode, address, image, visited, date, time, price) {
@@ -199,6 +202,7 @@ function revert() {
     thirdHeader();
     displayEveCards();
 }
+// ### Testing due to a lot of TrueScript Errors. ###
 // console.log(locArray);
 // console.log(restArray);
 // console.log(eveArray);

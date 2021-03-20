@@ -10,6 +10,8 @@ let eveArray = [];
 
 // ### Create Parent class Locations with properties (name(object), city, zip, address, image) ###
 
+// ### added "visited" as a sort-timestamp later on ###
+
 class Locations {
   object: string;
   city: string;
@@ -42,6 +44,8 @@ class Locations {
 }
 
 // ### Create Child class Restaurants with properties (phone-number, cuisine, web-address) ###
+
+// ### added "visited" as a sort-timestamp later on ###
 
 class Restaurants extends Locations {
   phone: string;
@@ -81,6 +85,8 @@ class Restaurants extends Locations {
 }
 
 // ### Create Child class Events with properties (date, time, ticket-price) ###
+
+// ### added "visited" as a sort-timestamp later on ###
 
 class Events extends Locations {
   date: string;
@@ -529,6 +535,8 @@ function revert() {
   thirdHeader();
   displayEveCards();
 }
+
+// ### Testing due to a lot of TrueScript Errors. ###
 
 // console.log(locArray);
 // console.log(restArray);
