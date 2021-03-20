@@ -1,5 +1,19 @@
 body {
-  background-color: darkgrey;
+  background: url(../images/newyork_bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+#header {
+  height: 3.5em;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+a:active {
+  cursor: pointer;
 }
 
 #test {

@@ -60,13 +60,14 @@ function displayEveCards() {
 
 displayEveCards();
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////
+// ### Adding EventListener ### //
+//////////////////////////////////
 
-// ### Merge + Sort function (time/date) ###
+// ### Add EventListener to Home-button
 
-// function sortBigDate() {
-
-// }
+let home = document.getElementById("home");
+home.addEventListener("click", revert);
 
 // ### Add EventListener to dropdown-menu (Ascending/Descending/Revert) ###
 
@@ -78,6 +79,12 @@ dscButton.addEventListener("click", dispDescend);
 
 let revButton = document.getElementById("revert");
 revButton.addEventListener("click", revert);
+
+//////////////////////////////////////////////
+// ### Sorting all objects by time/date ### //
+//////////////////////////////////////////////
+
+// ### Ascending function (Merge arrays, sort, clear content, new content) ###
 
 function dispAscend() {
   content.textContent = "";
@@ -96,6 +103,8 @@ function dispAscend() {
   }
 }
 
+// ### Descending function (Merge arrays, sort, clear content, new content) ###
+
 function dispDescend() {
   content.textContent = "";
 
@@ -113,6 +122,8 @@ function dispDescend() {
   }
 }
 
+// ### Reverting function (just rebuilding from the arrays) ###
+
 function revert() {
   firstHeader();
   displayLocCards();
@@ -121,10 +132,6 @@ function revert() {
   thirdHeader();
   displayEveCards();
 }
-
-// function dispDescend() {
-//   content.textContent = "";
-// }
 
 // console.log(locArray);
 // console.log(restArray);

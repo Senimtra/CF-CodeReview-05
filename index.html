@@ -21,112 +21,119 @@
     <title>Semintra Code Review 05</title>
   </head>
   <body>
-    <div class="container bg-secondary m-5"></div>
-
-    <!-- ### Header begins here ### -->
-
-    <header>
-      <div class="row bg-dark text-white fs-1 justify-content-center mx-5 py-5">
-        Semintra's City Blog
-      </div>
-    </header>
-
-    <!-- ### Nav-bar begins here ### -->
-
-    <nav class="navbar navbar-expand-sm navbar-light bg-light mx-5">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >last visits</a
-              >
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" id="ascending">ascending</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" id="descending">descending</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" id="revert">revert</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                >Disabled</a
-              >
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+    <div class="container my-5 mx-auto">
+      <div class="row-fluid topheader">
+        <div>
+          <header>
+            <div
+              id="header"
+              class="col d-flex justify-content-center align-items-center fs-1 text-white bg-dark mx-5"
+            >
+              Semintra's City Blog
+            </div>
+          </header>
         </div>
       </div>
-    </nav>
 
-    <!-- ### Main-content begins here ### -->
+      <!-- ### Nav-bar begins here ### -->
 
-    <main>
-      <div id="content" class="row text-secondary px-sm-2 pb-3 mt-3 mx-5"></div>
-    </main>
+      <nav class="navbar navbar-expand-sm navbar-light bg-light mx-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">New York never sleeps...</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li>
+                <button id="home" class="btn btn-secondary" type="submit">
+                  Home
+                </button>
+              </li>
 
-    <!-- ### Footer begins here ### -->
+              <li class="nav-item">
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown"></ul>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    last visits
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <a class="dropdown-item" id="ascending">ascending</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" id="descending">descending</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" id="revert">revert</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
 
-    <footer>
-      <div class="row bg-dark text-white justify-content-center fs-4 py-3 mx-5">
-        Semintra's City Blog
-      </div>
-    </footer>
+      <!-- ### Main-content begins here ### -->
 
-    <!-- ### Link Bootstrap 5.0 JavaScript-Bundle ### -->
+      <main>
+        <div
+          id="content"
+          class="row text-secondary px-sm-2 pb-3 mt-3 mx-5"
+        ></div>
+      </main>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
+      <!-- ### Footer begins here ### -->
 
-    <!-- ### Link own JavaScript files ### -->
+      <footer>
+        <div
+          class="row bg-dark text-white justify-content-center fs-4 py-3 mx-5 mb-5"
+        >
+          Semintra's City Blog
+        </div>
+      </footer>
 
-    <script src="./scripts/classes.js"></script>
-    <script src="./scripts/objects.js"></script>
-    <script src="./scripts/script.js"></script>
+      <!-- ### Link Bootstrap 5.0 JavaScript-Bundle ### -->
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"
+      ></script>
+
+      <!-- ### Link own JavaScript files ### -->
+
+      <script src="./scripts/classes.js"></script>
+      <script src="./scripts/objects.js"></script>
+      <script src="./scripts/script.js"></script>
+    </div>
   </body>
 </html>

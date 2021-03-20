@@ -40,10 +40,12 @@ function displayEveCards() {
     }
 }
 displayEveCards();
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
-// ### Merge + Sort function (time/date) ###
-// function sortBigDate() {
-// }
+//////////////////////////////////
+// ### Adding EventListener ### //
+//////////////////////////////////
+// ### Add EventListener to Home-button
+var home = document.getElementById("home");
+home.addEventListener("click", revert);
 // ### Add EventListener to dropdown-menu (Ascending/Descending/Revert) ###
 var ascButton = document.getElementById("ascending");
 ascButton.addEventListener("click", dispAscend);
@@ -51,6 +53,10 @@ var dscButton = document.getElementById("descending");
 dscButton.addEventListener("click", dispDescend);
 var revButton = document.getElementById("revert");
 revButton.addEventListener("click", revert);
+//////////////////////////////////////////////
+// ### Sorting all objects by time/date ### //
+//////////////////////////////////////////////
+// ### Ascending function (Merge arrays, sort, clear content, new content) ###
 function dispAscend() {
     content.textContent = "";
     var mergeLocRest = locArray.concat(restArray);
@@ -66,6 +72,7 @@ function dispAscend() {
         mergeArray[i].display();
     }
 }
+// ### Descending function (Merge arrays, sort, clear content, new content) ###
 function dispDescend() {
     content.textContent = "";
     var mergeLocRest = locArray.concat(restArray);
@@ -81,6 +88,7 @@ function dispDescend() {
         mergeArray[i].display();
     }
 }
+// ### Reverting function (just rebuilding from the arrays) ###
 function revert() {
     firstHeader();
     displayLocCards();
@@ -89,9 +97,6 @@ function revert() {
     thirdHeader();
     displayEveCards();
 }
-// function dispDescend() {
-//   content.textContent = "";
-// }
 // console.log(locArray);
 // console.log(restArray);
 // console.log(eveArray);
