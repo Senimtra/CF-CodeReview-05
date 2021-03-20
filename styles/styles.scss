@@ -6,20 +6,22 @@ body {
 }
 
 .hero {
-  background-color: #10212dc2;
-  padding: 0.5rem;
+  background-image: url(../images/skyline.png);
+  opacity: 0.3;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 15em;
+  background-color: hsla(205, 48%, 12%, 0.432);
   padding-bottom: 0%;
-  margin: 1%;
-  border-radius: 0.3em;
-  img {
-    width: 100%;
-    opacity: 0.2;
-  }
 }
 
 .heroTop {
-  background-color: #a5a5a5d0;
+  background-color: #a5a5a5bd;
   border-radius: 0.3em;
+  border-top: 0.4em solid #10212dc2;
+  border-left: 0.4em solid #10212dc2;
+  border-right: 0.4em solid #10212dc2;
 }
 
 .headerIn {
@@ -42,6 +44,21 @@ body {
 .headerOut {
   background-color: #a5a5a5e0;
   box-shadow: 0px 0px 3px black;
+}
+
+#carousel {
+  height: 5em;
+  background-color: #10212dc2;
+  // margin-bottom: 0.5em;
+  overflow: hidden;
+
+  div {
+    height: 100%;
+    img {
+      height: 100%;
+      border-radius: 0.3em;
+    }
+  }
 }
 
 .container {
