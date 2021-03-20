@@ -3,6 +3,10 @@ body {
   background-size: cover;
 }
 
+a:active {
+  cursor: pointer;
+}
+
 .hero {
   background-image: url(../images/skyline_transp.png);
   opacity: 1;
@@ -62,6 +66,10 @@ body {
           box-shadow: 0px 0px 3px black;
 }
 
+#social img {
+  width: 2rem;
+}
+
 .navbar {
   border-left: 0.4rem solid #10212dc2;
   border-right: 0.4rem solid #10212dc2;
@@ -104,14 +112,6 @@ body {
 .container {
   margin: 0;
   padding: 0;
-}
-
-a:active {
-  cursor: pointer;
-}
-
-#test {
-  height: 50vh;
 }
 
 .card {
