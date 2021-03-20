@@ -5,6 +5,12 @@ body {
   background-size: cover;
 }
 
+a:active {
+  cursor: pointer;
+}
+
+// ### Hero image and Header styles begin here ###
+
 .hero {
   background-image: url(../images/skyline_transp.png);
   opacity: 1;
@@ -15,7 +21,7 @@ body {
   background-color: hsla(206, 25%, 25%, 0.616);
   padding-bottom: 0%;
   color: #e2e2e2d3;
-  font-size: 5rem;
+  font-size: 7em;
   font-family: "Amatic SC", cursive;
   display: flex;
   justify-content: center;
@@ -54,6 +60,12 @@ body {
   box-shadow: 0px 0px 3px black;
 }
 
+#social img {
+  width: 2rem;
+}
+
+// ### Nav-bar and Carousel styles begin here ###
+
 .navbar {
   border-left: 0.4rem solid #10212dc2;
   border-right: 0.4rem solid #10212dc2;
@@ -66,6 +78,10 @@ body {
   background-color: #303f49;
   color: #e2e2e2be;
   font-weight: bold;
+  box-shadow: 0px 0px 2px black;
+  img {
+    width: 1rem;
+  }
 }
 
 #carousel {
@@ -94,13 +110,7 @@ body {
   padding: 0;
 }
 
-a:active {
-  cursor: pointer;
-}
-
-#test {
-  height: 50vh;
-}
+// ### Created object card styles begin here ###
 
 .card {
   background-color: #a5a5a5e0;
@@ -132,6 +142,8 @@ a:active {
 .visited {
   font-size: 0.5em;
 }
+
+// ### Footer styles begin here ###
 
 .footerIn {
   background-color: #10212dc2;
