@@ -13,6 +13,20 @@
       rel="stylesheet"
     />
 
+    <!-- ### FontAwesome Button ### -->
+
+    <script
+      src="https://kit.fontawesome.com/464e266a59.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ### Link Anime CSS ### -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!-- ### Link Bootstrap 5.0 CSS ### -->
 
     <link
@@ -33,7 +47,11 @@
       <div class="row-fluid topheader mt-5">
         <header>
           <div class="row heroTop mx-4">
-            <div class="col hero">City Blog New York</div>
+            <div class="col hero">
+              <div class="animate__animated animate__pulse">
+                City Blog New York
+              </div>
+            </div>
           </div>
 
           <!-- ### Nav-bar begins here ### -->
@@ -52,25 +70,37 @@
               >
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div
-                class="collapse navbar-collapse d-flex"
-                id="navbarSupportedContent"
-              >
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-0 mb-lg-0">
                   <li>
-                    <button id="home" class="btn" type="submit">Home</button>
+                    <a href="https://github.com/Semintra"
+                      ><button
+                        id="home"
+                        class="btn ms-2 bg-danger"
+                        type="submit"
+                      >
+                        <i class="fas fa-heart"></i></button
+                    ></a>
                   </li>
                   <li>
-                    <button id="home" class="btn ms-4" type="submit">
+                    <a href="/index.html">
+                      <button id="home" class="btn ms-3" type="submit">
+                        Home
+                      </button></a
+                    >
+                  </li>
+
+                  <li>
+                    <button id="home" class="btn ms-2" type="submit">
                       Login
                     </button>
                   </li>
+
                   <li>
-                    <button id="home" class="btn ms-4" type="submit">
+                    <button id="home" class="btn ms-2" type="submit">
                       Contact
                     </button>
                   </li>
-
                   <li class="nav-item">
                     <ul
                       class="dropdown-menu"
@@ -84,7 +114,7 @@
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
                       >
-                        last visits
+                        last visits <img src="./images/like_star.png" />
                       </button>
                       <ul
                         class="dropdown-menu"
@@ -107,7 +137,7 @@
                   </li>
                 </ul>
               </div>
-              <div id="social">
+              <div id="social" class="animate__animated animate__bounce">
                 <a href="https://web.whatsapp.com/" target="_blank"
                   ><img src="./images/whatsapp.png" alt="WhatsApp-Logo"
                 /></a>
@@ -194,6 +224,10 @@
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
+
+    <!-- ### Link SweetAlert2 CDN ### -->
+
+    <script src="sweetalert2.all.min.js"></script>
 
     <!-- ### Link own JavaScript files ### -->
 

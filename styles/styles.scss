@@ -21,7 +21,7 @@ a:active {
   background-color: hsla(206, 25%, 25%, 0.616);
   padding-bottom: 0%;
   color: #e2e2e2d3;
-  font-size: 5rem;
+  font-size: 7em;
   font-family: "Amatic SC", cursive;
   display: flex;
   justify-content: center;
@@ -78,6 +78,10 @@ a:active {
   background-color: #303f49;
   color: #e2e2e2be;
   font-weight: bold;
+  box-shadow: 0px 0px 2px black;
+  img {
+    width: 1rem;
+  }
 }
 
 #carousel {
