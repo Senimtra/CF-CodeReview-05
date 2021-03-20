@@ -4,22 +4,37 @@ body {
 }
 
 .hero {
-  background-image: url(../images/skyline.png);
-  opacity: 0.3;
+  background-image: url(../images/skyline_transp.png);
+  opacity: 1;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  height: 15em;
-  background-color: rgba(16, 33, 45, 0.432);
+  height: 15rem;
+  background-color: rgba(48, 66, 80, 0.616);
   padding-bottom: 0%;
+  color: #e2e2e2d3;
+  font-size: 5rem;
+  font-family: "Amatic SC", cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .heroTop {
   background-color: #a5a5a5bd;
-  border-radius: 0.3em;
-  border-top: 0.4em solid #10212dc2;
-  border-left: 0.4em solid #10212dc2;
-  border-right: 0.4em solid #10212dc2;
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+  border-top: 0.4em solid #10212d9f;
+  border-left: 0.4em solid #10212d9f;
+  border-right: 0.4em solid #10212d9f;
+  -webkit-box-shadow: 0px 0px 2px black;
+          box-shadow: 0px 0px 2px black;
 }
 
 .headerIn {
@@ -47,8 +62,23 @@ body {
           box-shadow: 0px 0px 3px black;
 }
 
+.navbar {
+  border-left: 0.4rem solid #10212dc2;
+  border-right: 0.4rem solid #10212dc2;
+  border-top: 0.2rem solid #10212dc2;
+  -webkit-box-shadow: 0px 0px 2px black;
+          box-shadow: 0px 0px 2px black;
+  background-color: #ababab;
+}
+
+.btn {
+  background-color: #303f49;
+  color: #e2e2e2be;
+  font-weight: bold;
+}
+
 #carousel {
-  height: 5em;
+  height: 4.78em;
   background-color: #10212dc2;
   overflow: hidden;
 }
@@ -60,6 +90,15 @@ body {
 #carousel div img {
   height: 100%;
   border-radius: 0.3em;
+}
+
+.carouBorder {
+  border: 0.45rem solid #10212d00;
+  background-color: #10212dc2;
+  border-bottom-left-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
+  -webkit-box-shadow: 0px 0px 2px black;
+          box-shadow: 0px 0px 2px black;
 }
 
 .container {
@@ -141,7 +180,7 @@ a:active {
 
 .footerOut {
   background-color: #a5a5a5e0;
-  height: 16vh;
+  height: 8.3rem;
   border-radius: 0.3em;
   -webkit-box-shadow: 0px 0px 4px black;
           box-shadow: 0px 0px 4px black;
