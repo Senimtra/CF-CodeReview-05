@@ -3,7 +3,7 @@
 locArray = locArray.filter((val) => !restArray.includes(val));
 locArray = locArray.filter((val) => !eveArray.includes(val));
 
-// ### Create Header-bar Localisations ###
+// ### Create Header-bar Locations ###
 
 function firstHeader() {
   content.innerHTML =
@@ -60,23 +60,72 @@ function displayEveCards() {
 
 displayEveCards();
 
-console.log(locArray);
-console.log(restArray);
-console.log(eveArray);
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// ### NOW for the sorting
+// ### Merge + Sort function (time/date) ###
 
-function sortBigDate() {
-  const mergeLocRest = locArray.concat(restArray);
-  const mergeArray = mergeLocRest.concat(eveArray);
-  const sortByDate = (mergeArray) => {
-    const sorter = (a, b) => {
+// function sortBigDate() {
+
+// }
+
+// ### Add EventListener to dropdown-menu (Ascending/Descending/Revert) ###
+
+let ascButton = document.getElementById("ascending");
+ascButton.addEventListener("click", dispAscend);
+
+let dscButton = document.getElementById("descending");
+dscButton.addEventListener("click", dispDescend);
+
+let revButton = document.getElementById("revert");
+revButton.addEventListener("click", revert);
+
+function dispAscend() {
+  content.textContent = "";
+
+  let mergeLocRest = locArray.concat(restArray);
+  let mergeArray = mergeLocRest.concat(eveArray);
+  let sortByDate = (mergeArray) => {
+    let sorter = (a, b) => {
       return new Date(a.visited).getTime() - new Date(b.visited).getTime();
     };
     mergeArray.sort(sorter);
   };
   sortByDate(mergeArray);
-  console.table(mergeArray);
+  for (let i = 0; i < mergeArray.length; i++) {
+    mergeArray[i].display();
+  }
 }
 
-sortBigDate();
+function dispDescend() {
+  content.textContent = "";
+
+  let mergeLocRest = locArray.concat(restArray);
+  let mergeArray = mergeLocRest.concat(eveArray);
+  let sortByDate = (mergeArray) => {
+    let sorter = (a, b) => {
+      return new Date(b.visited).getTime() - new Date(a.visited).getTime();
+    };
+    mergeArray.sort(sorter);
+  };
+  sortByDate(mergeArray);
+  for (let i = 0; i < mergeArray.length; i++) {
+    mergeArray[i].display();
+  }
+}
+
+function revert() {
+  firstHeader();
+  displayLocCards();
+  secondHeader();
+  displayRestCards();
+  thirdHeader();
+  displayEveCards();
+}
+
+// function dispDescend() {
+//   content.textContent = "";
+// }
+
+// console.log(locArray);
+// console.log(restArray);
+// console.log(eveArray);
