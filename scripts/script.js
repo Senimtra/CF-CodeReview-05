@@ -4,7 +4,7 @@ locArray = locArray.filter(function (val) { return !eveArray.includes(val); });
 // ### Create Header-bar Locations ###
 function firstHeader() {
     content.innerHTML =
-        "<div class='card headerOut p-0 my-3'><div class='headerIn px-2 my-1 d-flex justify-content-between'>The city never sleeps ... <img src='./images/skyline_header.png'><div>... / locations</div></div";
+        "<div class='card headerOut p-0 mb-3 mt-5'><div class='headerIn px-2 my-1 d-flex justify-content-between'>The city never sleeps ... <img src='./images/skyline_header.png'><div>... / locations</div></div";
 }
 firstHeader();
 // ### Loop function to create Location cards ###

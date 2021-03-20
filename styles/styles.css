@@ -9,9 +9,9 @@ body {
 
 .headerIn {
   background-color: #10212dc2;
-  border-radius: 0.15em;
-  -webkit-box-shadow: 0px 0px 1px black;
-          box-shadow: 0px 0px 1px black;
+  border-radius: 0.1em;
+  -webkit-box-shadow: 0px 0px 2px black;
+          box-shadow: 0px 0px 2px black;
   color: #e2e2e2be;
   font-size: 2em;
   font-family: "Amatic SC", cursive;
@@ -27,6 +27,8 @@ body {
 
 .headerOut {
   background-color: #a5a5a5e0;
+  -webkit-box-shadow: 0px 0px 3px black;
+          box-shadow: 0px 0px 3px black;
 }
 
 .container {
@@ -74,6 +76,44 @@ a:active {
 
 .visited {
   font-size: 0.5em;
+}
+
+.footerIn {
+  background-color: #10212dc2;
+  border-radius: 0.2rem;
+  -webkit-box-shadow: 0px 0px 3px black;
+          box-shadow: 0px 0px 3px black;
+  margin: 0.4rem;
+  position: relative;
+  color: #e2e2e2be;
+  font-family: "Amatic SC", cursive;
+  font-size: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footerIn img {
+  width: 99.7%;
+  position: absolute;
+  bottom: 0;
+  left: 0.1em;
+  border-radius: 0.25em;
+  opacity: 0.2;
+}
+
+.footerOut {
+  background-color: #a5a5a5e0;
+  height: 16vh;
+  border-radius: 0.3em;
+  -webkit-box-shadow: 0px 0px 4px black;
+          box-shadow: 0px 0px 4px black;
 }
 
 @media screen and (max-width: 766px) {
