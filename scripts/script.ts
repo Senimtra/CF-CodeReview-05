@@ -7,7 +7,7 @@ locArray = locArray.filter((val) => !eveArray.includes(val));
 
 function firstHeader() {
   content.innerHTML =
-    "<div class='card headerOut p-0 mb-3 mt-5'><div class='headerIn px-2 my-1 d-flex justify-content-between'>The city never sleeps ... <img src='./images/skyline_header.png'><div>... / locations</div></div";
+    "<div class='card headerOut p-0 mb-3'><div class='headerIn px-2 my-1 d-flex justify-content-between'>The city never sleeps ...<img src='./images/skyline.png'><div>... / locations</div></div";
 }
 
 firstHeader();
@@ -26,7 +26,7 @@ displayLocCards();
 
 function secondHeader() {
   content.innerHTML +=
-    "<div class='card headerOut p-0 my-3'><div class='headerIn px-2 my-1 d-flex justify-content-between'>New York, New York ...<img src='./images/skyline_header.png'><div>... / restaurants</div></div";
+    "<div class='card headerOut p-0 my-3'><div class='headerIn px-2 my-1 d-flex justify-content-between'>New York, New York ...<img src='./images/skyline.png'><div>... / restaurants</div></div";
 }
 
 secondHeader();
@@ -45,7 +45,7 @@ displayRestCards();
 
 function thirdHeader() {
   content.innerHTML +=
-    "<div class='card headerOut p-0 my-3'><div class='headerIn px-2 my-1 d-flex justify-content-between'>Welcome to the big apple ...<img src='./images/skyline_header.png'><div>... / events</div></div";
+    "<div class='card headerOut p-0 my-3'><div class='headerIn px-2 my-1 d-flex justify-content-between'>Welcome to the big apple ...<img src='./images/skyline.png'><div>... / events</div></div";
 }
 
 thirdHeader();
