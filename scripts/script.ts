@@ -10,11 +10,8 @@ let eveArray = [];
 
 // ### Create Parent class Locations with properties (name(object), city, zip, address, image) ###
 
-<<<<<<< HEAD
-=======
 // ### added "visited" as a sort-timestamp later on ###
 
->>>>>>> 1c4d9e17efa14141b0f2ca7f3653a4e5054cd918
 class Locations {
   object: string;
   city: string;
@@ -37,12 +34,7 @@ class Locations {
   
     <img src='${this.image}' class='card-img-top d-none d-md-block' alt=''>
     
-<<<<<<< HEAD
-    <div class='card-body px-2 pt-0'>
-
-=======
     <div class='card-body px-2 pt-0'>    
->>>>>>> 1c4d9e17efa14141b0f2ca7f3653a4e5054cd918
     <div><div class='card-text1'>${this.object}</div><div class='card-text2'>${this.zipCode} ${this.city}<br>${this.address}</div></div>
         
     <div class="visited"><br><i>created:<br>${this.visited}</i></div></div>
@@ -53,11 +45,8 @@ class Locations {
 
 // ### Create Child class Restaurants with properties (phone-number, cuisine, web-address) ###
 
-<<<<<<< HEAD
-=======
 // ### added "visited" as a sort-timestamp later on ###
 
->>>>>>> 1c4d9e17efa14141b0f2ca7f3653a4e5054cd918
 class Restaurants extends Locations {
   phone: string;
   cuisine: string;
@@ -97,11 +86,8 @@ class Restaurants extends Locations {
 
 // ### Create Child class Events with properties (date, time, ticket-price) ###
 
-<<<<<<< HEAD
-=======
 // ### added "visited" as a sort-timestamp later on ###
 
->>>>>>> 1c4d9e17efa14141b0f2ca7f3653a4e5054cd918
 class Events extends Locations {
   date: string;
   time: string;

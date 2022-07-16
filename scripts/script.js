@@ -20,10 +20,7 @@ var locArray = [];
 var restArray = [];
 var eveArray = [];
 // ### Create Parent class Locations with properties (name(object), city, zip, address, image) ###
-<<<<<<< HEAD
-=======
 // ### added "visited" as a sort-timestamp later on ###
->>>>>>> 1c4d9e17efa14141b0f2ca7f3653a4e5054cd918
 var Locations = /** @class */ (function () {
     function Locations(object, city, zipCode, address, image, visited) {
         this.object = object;
@@ -35,19 +32,12 @@ var Locations = /** @class */ (function () {
         locArray.push(this);
     }
     Locations.prototype.display = function () {
-<<<<<<< HEAD
-        content.innerHTML += "<div class='card col-md-3 d-flex flex-column my-3 p-1'>\n  \n    <img src='" + this.image + "' class='card-img-top d-none d-md-block' alt=''>\n    \n    <div class='card-body px-2 pt-0'>\n\n    <div><div class='card-text1'>" + this.object + "</div><div class='card-text2'>" + this.zipCode + " " + this.city + "<br>" + this.address + "</div></div>\n        \n    <div class=\"visited\"><br><i>created:<br>" + this.visited + "</i></div></div>\n    \n    </div>";
-=======
         content.innerHTML += "<div class='card col-md-3 d-flex flex-column my-3 p-1'>\n  \n    <img src='" + this.image + "' class='card-img-top d-none d-md-block' alt=''>\n    \n    <div class='card-body px-2 pt-0'>    \n    <div><div class='card-text1'>" + this.object + "</div><div class='card-text2'>" + this.zipCode + " " + this.city + "<br>" + this.address + "</div></div>\n        \n    <div class=\"visited\"><br><i>created:<br>" + this.visited + "</i></div></div>\n    \n    </div>";
->>>>>>> 1c4d9e17efa14141b0f2ca7f3653a4e5054cd918
     };
     return Locations;
 }());
 // ### Create Child class Restaurants with properties (phone-number, cuisine, web-address) ###
-<<<<<<< HEAD
-=======
 // ### added "visited" as a sort-timestamp later on ###
->>>>>>> 1c4d9e17efa14141b0f2ca7f3653a4e5054cd918
 var Restaurants = /** @class */ (function (_super) {
     __extends(Restaurants, _super);
     function Restaurants(object, city, zipCode, address, image, visited, phone, cuisine, web) {
@@ -64,10 +54,7 @@ var Restaurants = /** @class */ (function (_super) {
     return Restaurants;
 }(Locations));
 // ### Create Child class Events with properties (date, time, ticket-price) ###
-<<<<<<< HEAD
-=======
 // ### added "visited" as a sort-timestamp later on ###
->>>>>>> 1c4d9e17efa14141b0f2ca7f3653a4e5054cd918
 var Events = /** @class */ (function (_super) {
     __extends(Events, _super);
     function Events(object, city, zipCode, address, image, visited, date, time, price) {
